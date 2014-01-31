@@ -3,9 +3,7 @@
 //Program #1
 // 1/14/14
 
-//Hello
-
-//Troll
+//Test
 
 
 import java.util.Scanner;
