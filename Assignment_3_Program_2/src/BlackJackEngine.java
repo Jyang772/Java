@@ -23,6 +23,7 @@ public class BlackJackEngine {
 		int playercount = 0;  //Just counts the indices of card in hand
 		int dealercount = 0;
 		boolean done = false;
+		playerWon = false;
 		
 		System.out.println("\tPlayer Hand of 2 cards: ");
 		//Deal two cards:
@@ -91,7 +92,7 @@ public class BlackJackEngine {
 				
 				if(dealervalue == value)
 					System.out.println("Player, you have tied with the dealer. ");
-				if(dealervalue < value)
+				if(dealervalue < value )
 					playerWon = true;
 				
 				done = true;

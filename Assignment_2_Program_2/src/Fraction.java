@@ -30,6 +30,16 @@ public class Fraction {
 		return fraction;
 	}
 	
+	public Double getNum()
+	{
+		return numerator;
+	}
+	
+	public Double getDen()
+	{
+		return denominator;
+	}
+
 	public String toString()
 	{
 		String r = numerator + "/" + denominator;
@@ -55,5 +65,58 @@ public class Fraction {
 	{
 		System.out.println("In increment");
 		numerator += denominator;
+	}
+
+	public void reduce()
+	{
+		/**
+		 while(numerator != 0) {
+		      Double old_numerator = numerator;
+		      numerator = denominator % numerator;
+		      denominator = old_numerator;
+		  }**/
+		
+		if(denominator % numerator == 0)
+		{	
+			denominator /= numerator;
+			numerator /= numerator;
+		}
+		 
+	}
+
+	public Fraction add(Fraction x2) {
+		
+		Fraction n = new Fraction();
+		n.numerator = numerator * x2.getDen() + denominator * x2.getNum();
+		n.denominator = denominator * x2.getDen();
+		return n;
+		
+		
+	}
+
+	public Fraction subtract(Fraction x2)
+	{
+		Fraction n = new Fraction();
+		n.numerator = numerator * x2.getDen() - denominator * x2.getNum();
+		n.denominator = denominator * x2.getDen();
+		return n;
+	}
+
+	public Fraction multiply(Fraction x2)
+	{
+		Fraction n = new Fraction();
+		n.numerator = numerator * x2.numerator;
+		n.denominator = denominator * x2.denominator;
+		return n;
+	}
+
+	public Fraction divide(Fraction x2)
+	{
+		Fraction n = new Fraction();
+		if(getValue() > x2.getValue())
+		{n.numerator = numerator * x2.denominator;
+		n.denominator = denominator * x2.numerator;
+		}
+		return n;
 	}
 }
