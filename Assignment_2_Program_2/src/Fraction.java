@@ -1,4 +1,6 @@
-
+//Justin Yang
+//Assignment #2 Program 2
+//1/20/14
 //LAWL
 
 

@@ -1,3 +1,7 @@
+//Justin Yang
+//Assignment #2 Program 1
+//1/20/14
+
 import java.util.Arrays;
 
 
