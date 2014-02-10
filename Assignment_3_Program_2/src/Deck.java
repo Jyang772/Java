@@ -1,3 +1,10 @@
+//Assignment #3 
+//Program 2
+//Deck.Java
+
+//Justin Yang 
+
+
 import java.util.ArrayList;
 import java.util.Collections;
 

@@ -1,3 +1,9 @@
+//Assignment #3 
+//Program 2
+//BlackJackEngine.java
+
+//Justin Yang 
+
 import java.util.ArrayList;
 import java.util.Scanner;
 

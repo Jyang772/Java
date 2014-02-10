@@ -1,3 +1,10 @@
+//Assignment #3 
+//Program 2
+//Cards.java
+
+//Justin Yang 
+
+
 
 public class Cards {
 	
