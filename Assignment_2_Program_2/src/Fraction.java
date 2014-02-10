@@ -1,5 +1,6 @@
-//Justin Yang
+//Justin Yang 
 //Assignment #2 Program 2
+//Updated for Assignment #3 Program 1
 //1/20/14
 //LAWL
 
