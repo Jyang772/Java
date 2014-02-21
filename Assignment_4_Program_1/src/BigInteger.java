@@ -4,29 +4,31 @@ import java.util.Scanner;
 
 public class BigInteger {
 
-	private ArrayList<Integer> Lawl = new ArrayList<Integer>();
-	String input = "";
-	
-	public void Input()
+	private ArrayList<Integer> lawl;
+	String input;
 
-	{
-		Scanner fooBar = new Scanner(System.in);
-		System.out.println("Enter a large number: ");
-		input = fooBar.next();
-		
-		int a = input.length()-1;
-		for(int i=input.length(); i > 0; i--)
-		{	Lawl.add(input.charAt(a) - '0');
-			a--;
-		}
-		
-	}
+
+
+public BigInteger(String s) {
+	lawl = new ArrayList<Integer>();
+	input = s;
 	
+	
+	int a = input.length()-1;
+	for(int i=input.length(); i > 0; i--)
+	{ lawl.add(input.charAt(a) - '0');
+		a--;
+	}
+	}
+
+
+
+
 	
 	
 	public ArrayList<Integer> getNum()
 	{
-		return Lawl;
+		return lawl;
 	}
 	
 	
@@ -35,29 +37,29 @@ public class BigInteger {
 	{
 		
 		String output = "";
-		ArrayList<Integer> Lawl2 = new ArrayList<Integer>();
-		ArrayList<Integer> Second = a.getNum();
+		ArrayList<Integer> lawl2 = new ArrayList<Integer>();
+		ArrayList<Integer> second = a.getNum();                 //Returns the BigInteger objects ArrayList
 		
 		int z = 0;
 		for(int i=0; i < input.length(); i++)
 		{
-			if((Second.get(i) + this.Lawl.get(i) + z) >= 10)
+			if((second.get(i) + this.lawl.get(i) + z) >= 10)
 			{	
 			
-				Lawl2.add(Second.get(i) + this.Lawl.get(i) + z - 10);
+				lawl2.add(second.get(i) + this.lawl.get(i) + z - 10);
 				z = 1;
 				if(i == input.length()-1)
-				Lawl2.add(1);
+				lawl2.add(1);
 			}
 			else
 			{ 
-			 Lawl2.add(Second.get(i) + this.Lawl.get(i) + z);
+			 lawl2.add(second.get(i) + this.lawl.get(i) + z);
 			 z = 0;
 			}
 		}
 		
-		for(int i=Lawl2.size() - 1; i >=0; i--)
-			output += Lawl2.get(i).toString();
+		for(int i=lawl2.size() - 1; i >=0; i--)
+			output += lawl2.get(i).toString();
 		
 		return output;
 

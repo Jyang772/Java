@@ -14,22 +14,19 @@ class BigInt
 	{
 		
 		String output = "";
-	
-				
+		BigInteger first = new BigInteger("2000");
+		BigInteger second = new BigInteger("9000");
 		
-		
-		BigInteger first = new BigInteger();
-		BigInteger second = new BigInteger();
-		
-		first.Input();
-		second.Input();
+		//first.Input();
+		//second.Input();
 		
 		output = first.Add(second);
 		
 		System.out.println(output);
 		
 		
-		
+		//комментарий!
+		//Forkbombed my VM trying to rewrite this program in x86 ASM
 		
 	}
 }
