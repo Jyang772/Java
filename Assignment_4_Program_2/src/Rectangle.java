@@ -1,8 +1,9 @@
 
 public class Rectangle {
 
-		public int width;
-		public int length;
+		private int width;
+		private int length;
+		
 		public Rectangle()
 		{
 		  width = 1;
