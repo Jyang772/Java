@@ -25,8 +25,7 @@ class BigInt
 		System.out.println(output);
 		
 		
-		//комментарий!
-		//Forkbombed my VM trying to rewrite this program in x86 ASM
+		
 		
 	}
 }

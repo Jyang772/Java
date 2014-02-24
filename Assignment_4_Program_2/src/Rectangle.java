@@ -11,6 +11,11 @@ public class Rectangle {
 		}
 		public Rectangle(int w, int l)
 		{
+			if(w == 0 || l == 0)
+			{	w = 1;
+				l = 1;
+			}
+			  
 			  width = w;
 			  length = l;
 		}
