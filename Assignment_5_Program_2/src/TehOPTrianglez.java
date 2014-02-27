@@ -16,17 +16,18 @@ public class TehOPTrianglez extends Applet{
 	public void paint(Graphics g)
 	{
 		
+	setBackground(Color.gray);
 		
 		int xmiddl = getSize().width / 2;
 		int ymiddl = getSize().height / 2;
 		
 		
-		//g.setColor();
+		;
 		
 		g.drawLine(0, 0, xmiddl, getSize().height);
 	     for(int i=0; i < getSize().width; i+=15)
 		{
-			
+	    	 g.setColor(Color.yellow);
 			g.drawLine(i,0,xmiddl,getSize().height);
 		}
 		g.drawLine(0, 15, xmiddl, getSize().height);
