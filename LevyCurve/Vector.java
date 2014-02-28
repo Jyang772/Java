@@ -1,7 +1,9 @@
 public class Vector extends Point {
 
+
 public Vector(double x, double y) {
- super(x,y);
+
+	super(x,y);
 }
 
 /**

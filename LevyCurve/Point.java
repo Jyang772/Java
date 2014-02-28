@@ -1,4 +1,4 @@
-public class Point {
+public class Point  {
 
 public double x;
 public double y;
@@ -36,6 +36,7 @@ public String toString() {
  * @param other
  * @return a new Vector
  */
+
 public Vector getVectorTo(Point other) {
  return new Vector(other.x - x,other.y - y);
 }

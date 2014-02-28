@@ -8,7 +8,7 @@ import javax.swing.JPanel;
 import javax.swing.JOptionPane;
 
 public class Fractal extends JPanel{
-
+	
 	private double length;
 
 	private static final long serialVersionUID = 1L;
@@ -47,6 +47,7 @@ public int numLevels;
 	  System.out.println("delta: " + delta);
 
 	  mid = mid.addVector(delta);
+	  
 	  System.out.println("mid: " + mid);
 	  System.out.println("Before:");
 	  drawFractalLine(g,from,mid,level-1);        //1st draw function
